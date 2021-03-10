@@ -43,7 +43,7 @@ const about = () => {
                 <li>Vue.js</li>
               </ul>
             </div>
-            <div>
+            <div  className="about-profile-container">
               <img className="about-profile" src={profile} alt="" />
             </div>
           </div>

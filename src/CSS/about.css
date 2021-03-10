@@ -32,7 +32,7 @@ line-height: 1.3em;
 .inner-about-container{
     margin-top: 20px;
     font-family: Calibri;
-    font-size: calc(0.8vw + 10px);
+    font-size: calc(0.8vw + 8px);
     display: grid;
     text-align: left;
     grid-gap: 20px;
@@ -73,9 +73,10 @@ ul{
 }
 @media (max-width:520px){
     .inner-about-container{
-        margin-left: 25vw;
         width: 70%; 
         grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
     }
     .each-section-title{
       text-align: center;
@@ -85,7 +86,30 @@ ul{
         width: 80%;
         color: #838EAC;
         font-weight: 600;
-
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-profile-container{
+        display: flex;
+        justify-content: center;
+    }
+    .about-profile{
+        width: 85%;
+    }
+}
+@media (max-width:420px){
+    .inner-about-container{
+        width: 100%; 
+      margin: 0px;
+    }
+    .each-section-title{
+      text-align: center;
+    }
+   
+   
+    .about-profile-container{
+        display: flex;
+        justify-content: center;
     }
     .about-profile{
         width: 85%;
