@@ -1,6 +1,10 @@
 /*
 GENERAL STYLING
 */
+:root{
+  --primary-color:#64FFDA;
+  --secondary-color:#0A192F;
+}
 body {
   background-color: #f5f5f5!important;
   color: #4e4e4e!important;
@@ -14,14 +18,17 @@ h5,
 h6 {
   color: #1e1e1e;
 }
-
+.app-container{
+  overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
 a {
   color: #1e1e1e;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: var(--primary-color);
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -208,12 +215,12 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #64FFDA;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: #64FFDA;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -238,7 +245,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: #64FFDA;
   margin-right: 10px;
 }
 
@@ -252,7 +259,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px #64FFDA;
   display: block;
 }
 
@@ -299,7 +306,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #0078ff;
+  background-color: #64FFDA;
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -318,7 +325,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: #64FFDA;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -356,7 +363,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid #64FFDA;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -451,48 +458,48 @@ NAVBAR
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #fff;
+  color:var(--primary-color);
 }
 
 .navbar-b.navbar-trans .show > .nav-link,
 .navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #141B26;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #fff;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #64FFDA;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #64FFDA;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: var(--primary-color);
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color:  var(--primary-color);
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -524,14 +531,17 @@ NAVBAR
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #0078ff;
+  background-color: var(--primary-color);
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #0078ff;
+  background-color:  var(--primary-color);
 }
+/* .nav-span{
+  color: var(--secondary-color);
+} */
 
 /* Hamburger Navbar */
 
@@ -592,6 +602,10 @@ NAVBAR
 INTRO
 */
 
+.intro-container{
+  text-align: left;
+}
+
 .intro {
   height: 100vh;
   position: relative;
@@ -644,7 +658,7 @@ INTRO
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #0078ff;
+  color: var(--primary-color);
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -905,7 +919,16 @@ BUTTON
   line-height: 1.5;
   border-radius: .3rem;
 }
-
+.btn-self{
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 15px;
+}
+.btn-self:hover{
+  transition: 0.5s ease all;
+  background: #64ffdb94;
+}
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;

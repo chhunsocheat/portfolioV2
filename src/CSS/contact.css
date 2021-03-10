@@ -1,0 +1,48 @@
+#contact h1{
+    font-family: Calibri;
+    font-weight: 700;
+    color:#A1ABC6;
+    margin-bottom: 50px;
+}
+#contact h1::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: -40%;
+    left: calc(20% + 15px);
+    width: 450px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--third-color);
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+.about-des{
+    font-family: Calibri;
+    font-weight: 700;
+    color:#A1ABC6;
+    margin-bottom: 100px;
+}
+i{
+    color: #64FFDA;
+    font-size: calc(1vw + 15px);
+}
+i:hover{
+color: #A1ABC6;
+cursor: pointer;
+transition: 0.3s ease all;
+}
+
+@media (max-width:420px){
+    .about-des{
+
+padding: 20px;
+    }
+}
+/* .logo{
+    color:white;
+    background: white;
+    font-size: 100px;
+} */
