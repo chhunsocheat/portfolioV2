@@ -13,6 +13,7 @@ import "./style.css"
 const App = () => {
   return (
     <div className="app-container">
+      <h1 style={{display:"none"}}>Socheat Chhun, Macquarie Univeristy Graduate with skills in Web Development.</h1>
       <Navbar />
       <Intro />
       <About />
