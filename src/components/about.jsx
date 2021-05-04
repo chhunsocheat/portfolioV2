@@ -17,12 +17,10 @@ const about = () => {
               <p>
                 A self-taught Web Developer, who is doing a Bachelor of
                 Information Technology, majoring in Cyber Security, trying to
-                learn as much as I can during my free time. I'm focusing the
-                combination of React and Vue with Node.
+                learn as much as I can during my free time. I'm focusing on bringing as much security aspect into web development as much as I can.
               </p>
               <p>
-                I am also taking units in the University that are Web related to
-                gain knowledge about web dev hand-on. I will be graduating from{" "}
+                I'm taking units that can provide me with the security knowledge that I can bring to development. I will be graduating from{" "}
                 <span style={{ color: "#52D2B8" }}>Macquarie University</span>{" "}
                 mid 2021.
               </p>
@@ -41,9 +39,27 @@ const about = () => {
                 <li>Node.js</li>
                 <li>HTML & CSS</li>
                 <li>Vue.js</li>
+                <li>Flask</li>
               </ul>
+              <div style={{ position: "relative" }}>
+                <a href="https://www.credly.com/badges/0290677b-3e53-4da6-8ba5-889b758acf79/public_url">
+                  <i style={{}} class="fab fa-aws">
+                    <span
+                      style={{
+                        fontSize: "0.6em",
+                        position: "absolute",
+                        top: "10%",
+                        marginLeft: "10px",
+                        fontWeight:"700"
+                      }}
+                    >
+                      AWS Certified Cloud Practitioner
+                    </span>
+                  </i>
+                </a>
+              </div>
             </div>
-            <div  className="about-profile-container">
+            <div className="about-profile-container">
               <img className="about-profile" src={profile} alt="" />
             </div>
           </div>

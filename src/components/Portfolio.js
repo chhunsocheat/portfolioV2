@@ -4,6 +4,7 @@ import img1 from "../img/twitter-clone.PNG";
 import img2 from "../img/color.PNG";
 import img3 from "../img/guitar.PNG";
 const Portfolio = () => {
+
   const item1Url = "https://twitter-frontend-c990f.web.app/";
   const item1GitUrl =
     "https://github.com/MQCOMP3120-2020/individual-web-development-task-SocheatChhun";
@@ -16,18 +17,18 @@ const Portfolio = () => {
       <h1 className="each-section-title">
         <span style={{ color: "#52D2B8" }}>03.</span> My Projects
       </h1>
-      <div style={{display:"flex",justifyContent:"center"}}>
-      <p className="site-can" style={{ color: "#52D2B8" }}>
-        Sites might take some time to load cause I"m hosting on free services.
-      </p>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <p className="site-can" style={{ color: "#52D2B8" }}>
+          Sites might take some time to load cause I"m hosting on free services.
+        </p>
       </div>
       <div className="work-container">
         <div className="inner-work-container">
           {/* Project Number 1 */}
 
           <div className="project-image">
-            <a target="_blank" href={item1Url}>
-              <img src={img1} alt="" />
+            <a target="_blank" rel="noopener noreferrer" href={item1Url}>
+              <img src={img1} alt="item1" />
             </a>
           </div>
           <div className="project-content project-content-right">
@@ -92,7 +93,7 @@ const Portfolio = () => {
 
           <div className="project-image item2-image">
             <a target="_blank" rel="noopener noreferrer" href={item2Url}>
-              <img src={img2} alt="" />
+              <img src={img2} alt="item2" />
             </a>
           </div>
           <div className="project-content  item2-content project-content-left">
@@ -123,11 +124,21 @@ const Portfolio = () => {
               <div></div>
 
               <div className="project-link">
-                <a target="_blank" className="anchor-tag" href={item2GitUrl}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anchor-tag"
+                  href={item2GitUrl}
+                >
                   <i class="fab fa-github"></i>
                   Github
                 </a>
-                <a target="_blank" className="anchor-tag" href={item2Url}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anchor-tag"
+                  href={item2Url}
+                >
                   <i class="fas fa-external-link-alt"></i>
                   External
                 </a>
@@ -139,8 +150,8 @@ const Portfolio = () => {
           {/* Project 3 */}
 
           <div className="project-image">
-            <a target="_blank" href={item3Url}>
-              <img src={img3} alt="" />
+            <a target="_blank" rel="noopener noreferrer" href={item3Url}>
+              <img src={img3} alt="item3" />
             </a>
           </div>
           <div className="project-content project-content-right">
@@ -171,11 +182,21 @@ const Portfolio = () => {
               </ul>
               <div></div>
               <div className="project-link">
-                <a target="_blank" className="anchor-tag" href={item3GitUrl}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anchor-tag"
+                  href={item3GitUrl}
+                >
                   <i class="fab fa-github"></i>
                   Github
                 </a>
-                <a target="_blank" className="anchor-tag" href={item3Url}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anchor-tag"
+                  href={item3Url}
+                >
                   <i class="fas fa-external-link-alt"></i>
                   External
                 </a>
