@@ -16,7 +16,7 @@ import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
-
+import 'semantic-ui-css/semantic.min.css'
 import * as serviceWorker from './serviceWorker';
 import App from "./App"
 

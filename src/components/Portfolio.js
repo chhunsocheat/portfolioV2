@@ -1,10 +1,13 @@
 import React from "react";
 import "../CSS/portfolio.css";
-import img1 from "../img/twitter-clone.PNG";
+import twitterClone from "../img/twitter-clone.PNG";
 import img2 from "../img/color.PNG";
 import img3 from "../img/guitar.PNG";
-const Portfolio = () => {
+import bandQuest from "../img/bandquest.PNG";
+import GifModal from "./GifModal";
+import bandGif from "../gif/bandGif.gif";
 
+const Portfolio = () => {
   const item1Url = "https://twitter-frontend-c990f.web.app/";
   const item1GitUrl =
     "https://github.com/MQCOMP3120-2020/individual-web-development-task-SocheatChhun";
@@ -24,12 +27,68 @@ const Portfolio = () => {
       </div>
       <div className="work-container">
         <div className="inner-work-container">
+          {/* Project Number 0 */}
+
+          <div className="project-image item2-image">
+            <GifModal thumbnail={bandQuest} gifFile={bandGif} />
+          </div>
+          <div className="project-content  item2-content project-content-left">
+            <p
+              className="project-overline project-overline-left"
+              style={{ textAlign: "start" }}
+            >
+              Featured Project
+            </p>
+            <h3
+              className="project-title project-title-left"
+              style={{ textAlign: "justify" }}
+            >
+              BandQuest
+            </h3>
+            <div className="project-description">
+              <p>
+               A platform I built that was inspired by a start up based in Sydney. BandQuest has
+               two types of users. Normal user and Band user. The platform is similar to Fivver. However, This
+               platform is focused on Band Freelancing. User and band can interact with each other. For example,
+               making requests and responding to requests.
+              </p>
+            </div>
+            <div className="project-tech-list">
+              <ul className="ul-left">
+                <li>Express Node</li>
+                <li>Redux</li>
+                <li>RC Slider</li>
+                <li>React.js</li>
+              </ul>
+              <div></div>
+
+              <div className="project-link">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anchor-tag"
+                  href={item2GitUrl}
+                >
+                  <i class="fab fa-github"></i>
+                  Github
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="anchor-tag"
+                  href={item2Url}
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  External
+                </a>
+              </div>
+              <div></div>
+            </div>
+          </div>
           {/* Project Number 1 */}
 
           <div className="project-image">
-            <a target="_blank" rel="noopener noreferrer" href={item1Url}>
-              <img src={img1} alt="item1" />
-            </a>
+            <GifModal thumbnail={twitterClone} gifFile={bandGif} />
           </div>
           <div className="project-content project-content-right">
             <p
@@ -58,7 +117,7 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="project-tech-list">
-              <div></div>
+              <div style={{ marginTop: "0.6em" }}></div>
               <ul className="ul-right">
                 <li>React</li>
                 <li>Firebase</li>
