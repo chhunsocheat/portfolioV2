@@ -6,8 +6,12 @@ import img3 from "../img/guitar.PNG";
 import bandQuest from "../img/bandquest.PNG";
 import GifModal from "./GifModal";
 import bandGif from "../gif/bandGif.gif";
+import colorGif from "../gif/colorGif.gif";
+import twitterCloneGif from "../gif/twitterCloneGif.gif";
 
 const Portfolio = () => {
+  const item0site = "https://band-quest.web.app/";
+  const item0git = "https://github.com/chhunsocheat/Merus-Band";
   const item1Url = "https://twitter-frontend-c990f.web.app/";
   const item1GitUrl =
     "https://github.com/MQCOMP3120-2020/individual-web-development-task-SocheatChhun";
@@ -47,17 +51,21 @@ const Portfolio = () => {
             </h3>
             <div className="project-description">
               <p>
-               A platform I built that was inspired by a start up based in Sydney. BandQuest has
-               two types of users. Normal user and Band user. The platform is similar to Fivver. However, This
-               platform is focused on Band Freelancing. User and band can interact with each other. For example,
-               making requests and responding to requests.
+                <p style={{ color: "#64ffda" }}>
+                  Click on image to see preview
+                </p>
+                A platform I built that was inspired by a start up based in
+                Sydney. BandQuest has two types of users. Normal user and Band
+                user. The platform is similar to Fivver. However, This platform
+                is focused on Band Freelancing. User and band can interact with
+                each other. For example, making requests and responding to
+                requests.
               </p>
             </div>
             <div className="project-tech-list">
               <ul className="ul-left">
-                <li>Express Node</li>
                 <li>Redux</li>
-                <li>RC Slider</li>
+                <li>Express</li>
                 <li>React.js</li>
               </ul>
               <div></div>
@@ -67,7 +75,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="anchor-tag"
-                  href={item2GitUrl}
+                  href={item0git}
                 >
                   <i class="fab fa-github"></i>
                   Github
@@ -76,7 +84,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="anchor-tag"
-                  href={item2Url}
+                  href={item0site}
                 >
                   <i class="fas fa-external-link-alt"></i>
                   External
@@ -88,7 +96,7 @@ const Portfolio = () => {
           {/* Project Number 1 */}
 
           <div className="project-image">
-            <GifModal thumbnail={twitterClone} gifFile={bandGif} />
+            <GifModal thumbnail={twitterClone} gifFile={twitterCloneGif} />
           </div>
           <div className="project-content project-content-right">
             <p
@@ -105,6 +113,9 @@ const Portfolio = () => {
             </h3>
             <div className="project-description">
               <p>
+              <p style={{ color: "#64ffda" }}>
+                  Click on image to see preview
+                </p>
                 A fully functional social media application for user to register
                 and tweet. User can change their profile picture and tweet,
                 mention or even tweet hashtags. This project was part of my
@@ -151,9 +162,7 @@ const Portfolio = () => {
           {/* Project Number 2 */}
 
           <div className="project-image item2-image">
-            <a target="_blank" rel="noopener noreferrer" href={item2Url}>
-              <img src={img2} alt="item2" />
-            </a>
+            <GifModal thumbnail={img2} gifFile={colorGif} />
           </div>
           <div className="project-content  item2-content project-content-left">
             <p
@@ -170,6 +179,9 @@ const Portfolio = () => {
             </h3>
             <div className="project-description">
               <p>
+              <p style={{ color: "#64ffda" }}>
+                  Click on image to see preview
+                </p>
                 Built with React and used various Raect Eco-System Libraries, it
                 is a clone of color palette, but with some added features.
               </p>
@@ -228,6 +240,9 @@ const Portfolio = () => {
             </h3>
             <div className="project-description">
               <p>
+              <p style={{ color: "#64ffda" }}>
+                  Click on image to see preview
+                </p>
                 Using React and Material UI, with MongoDB as database user can
                 login, signup and make payment with paypal.
               </p>
