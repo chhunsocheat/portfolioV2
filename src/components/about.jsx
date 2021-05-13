@@ -60,7 +60,7 @@ const about = () => {
               </div>
             </div>
             <div className="about-profile-container">
-              <img className="about-profile" src={profile} alt="" />
+              <img loading="lazy" className="about-profile" src={profile} alt="" />
             </div>
           </div>
         </div>

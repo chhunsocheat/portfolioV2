@@ -54,7 +54,7 @@ export default function GifModal({ thumbnail, gifFile }) {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <img className={classes.gif} src={gifFile} alt="" />
+      <img loading="lazy" className={classes.gif} src={gifFile} alt="" />
     </div>
   );
 

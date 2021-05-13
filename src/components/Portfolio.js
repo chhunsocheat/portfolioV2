@@ -222,7 +222,7 @@ const Portfolio = () => {
 
           <div className="project-image">
             <a target="_blank" rel="noopener noreferrer" href={item3Url}>
-              <img src={img3} alt="item3" />
+              <img loading="lazy" src={img3} alt="item3" />
             </a>
           </div>
           <div className="project-content project-content-right">
