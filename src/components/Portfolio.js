@@ -54,12 +54,11 @@ const Portfolio = () => {
                 <p style={{ color: "#64ffda" }}>
                   Click on image to see preview
                 </p>
-                A platform I built that was inspired by a start up based in
-                Sydney. BandQuest has two types of users. Normal user and Band
-                user. The platform is similar to Fivver. However, This platform
+                A platform inspired by a start up based in
+                Sydney. BandQuest is similar to Fivver. However, this platform
                 is focused on Band Freelancing. User and band can interact with
                 each other. For example, making requests and responding to
-                requests.
+                requests, giving reviews and posting videos.
               </p>
             </div>
             <div className="project-tech-list">
