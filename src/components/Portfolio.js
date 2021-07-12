@@ -2,11 +2,12 @@ import React from "react";
 import "../CSS/portfolio.css";
 import twitterClone from "../img/twitter-clone.PNG";
 import img2 from "../img/color.PNG";
-import img3 from "../img/guitar.PNG";
+import movie from "../img/movie.PNG";
 import bandQuest from "../img/bandquest.PNG";
 import GifModal from "./GifModal";
 import bandGif from "../gif/bandGif.gif";
 import colorGif from "../gif/colorGif.gif";
+import movieGif from "../gif/movieGif.gif";
 import twitterCloneGif from "../gif/twitterCloneGif.gif";
 
 const Portfolio = () => {
@@ -17,8 +18,8 @@ const Portfolio = () => {
     "https://github.com/MQCOMP3120-2020/individual-web-development-task-SocheatChhun";
   const item2Url = "https://gifted-lalande-199a27.netlify.com";
   const item2GitUrl = "https://github.com/chhunsocheat/React-Color-App";
-  const item3Url = "https://fierce-taiga-22470.herokuapp.com/";
-  const item3GitUrl = "https://github.com/chhunsocheat/Own-Online-Store";
+  const movieUrl ="https://blissful-bohr-4690c8.netlify.app/"
+  const movieGit ="https://github.com/chhunsocheat/screel"
   return (
     <div id="work" className="work-big-container about-container container">
       <h1 className="each-section-title">
@@ -54,11 +55,11 @@ const Portfolio = () => {
                 <p style={{ color: "#64ffda" }}>
                   Click on image to see preview
                 </p>
-                A platform inspired by a start up based in
-                Sydney. BandQuest is similar to Fivver. However, this platform
-                is focused on Band Freelancing. User and band can interact with
-                each other. For example, making requests and responding to
-                requests, giving reviews and posting videos.
+                A platform inspired by a start up based in Sydney. BandQuest is
+                similar to Fivver. However, this platform is focused on Band
+                Freelancing. User and band can interact with each other. For
+                example, making requests and responding to requests, giving
+                reviews and posting videos.
               </p>
             </div>
             <div className="project-tech-list">
@@ -95,7 +96,7 @@ const Portfolio = () => {
           {/* Project Number 1 */}
 
           <div className="project-image">
-            <GifModal thumbnail={twitterClone} gifFile={twitterCloneGif} />
+            <GifModal thumbnail={movie} gifFile={movieGif} />
           </div>
           <div className="project-content project-content-right">
             <p
@@ -108,31 +109,23 @@ const Portfolio = () => {
               className="project-title project-title-right"
               style={{ textAlign: "end" }}
             >
-              Twitter Clone
+              Screel
             </h3>
             <div className="project-description">
               <p>
-              <p style={{ color: "#64ffda" }}>
+                <p style={{ color: "#64ffda" }}>
                   Click on image to see preview
                 </p>
-                A fully functional social media application for user to register
-                and tweet. User can change their profile picture and tweet,
-                mention or even tweet hashtags. This project was part of my
-                assigment for
-                <span style={{ color: "#52D2B8" }}>
-                  {" "}
-                  COMP3120 Advanced Web Development.
-                </span>{" "}
-                There are also some information about the Covid-19 situation.
+                A movie platform where user can go and look for any movie that they like,
+                the platform also show what movie is popular and user can also see the IMDB rating and
+                the casts of each movie.
               </p>
             </div>
             <div className="project-tech-list">
               <div style={{ marginTop: "0.6em" }}></div>
               <ul className="ul-right">
                 <li>React</li>
-                <li>Firebase</li>
-                <li>Redux</li>
-                <li>Node.js</li>
+                <li>MovieDB</li>
               </ul>
               <div></div>
               <div className="project-link">
@@ -140,7 +133,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="anchor-tag"
-                  href={item1GitUrl}
+                  href={movieGit}
                 >
                   <i class="fab fa-github"></i>
                   Github
@@ -149,7 +142,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="anchor-tag"
-                  href={item1Url}
+                  href={movieUrl}
                 >
                   <i class="fas fa-external-link-alt"></i>
                   External
@@ -178,7 +171,7 @@ const Portfolio = () => {
             </h3>
             <div className="project-description">
               <p>
-              <p style={{ color: "#64ffda" }}>
+                <p style={{ color: "#64ffda" }}>
                   Click on image to see preview
                 </p>
                 Built with React and used various Raect Eco-System Libraries, it
@@ -217,12 +210,10 @@ const Portfolio = () => {
             </div>
           </div>
 
-          {/* Project 3 */}
+          {/* Project Number 3 */}
 
           <div className="project-image">
-            <a target="_blank" rel="noopener noreferrer" href={item3Url}>
-              <img loading="lazy" src={img3} alt="item3" />
-            </a>
+            <GifModal thumbnail={twitterClone} gifFile={twitterCloneGif} />
           </div>
           <div className="project-content project-content-right">
             <p
@@ -235,23 +226,31 @@ const Portfolio = () => {
               className="project-title project-title-right"
               style={{ textAlign: "end" }}
             >
-              Online Guiatar Store
+              Twitter Clone
             </h3>
             <div className="project-description">
               <p>
-              <p style={{ color: "#64ffda" }}>
+                <p style={{ color: "#64ffda" }}>
                   Click on image to see preview
                 </p>
-                Using React and Material UI, with MongoDB as database user can
-                login, signup and make payment with paypal.
+                A fully functional social media application for user to register
+                and tweet. User can change their profile picture and tweet,
+                mention or even tweet hashtags. This project was part of my
+                assigment for
+                <span style={{ color: "#52D2B8" }}>
+                  {" "}
+                  COMP3120 Advanced Web Development.
+                </span>{" "}
+                There are also some information about the Covid-19 situation.
               </p>
             </div>
             <div className="project-tech-list">
-              <div></div>
+              <div style={{ marginTop: "0.6em" }}></div>
               <ul className="ul-right">
+                <li>React</li>
+                <li>Firebase</li>
+                <li>Redux</li>
                 <li>Node.js</li>
-                <li>Mongoose</li>
-                <li>React.js</li>
               </ul>
               <div></div>
               <div className="project-link">
@@ -259,7 +258,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="anchor-tag"
-                  href={item3GitUrl}
+                  href={item1GitUrl}
                 >
                   <i class="fab fa-github"></i>
                   Github
@@ -268,7 +267,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="anchor-tag"
-                  href={item3Url}
+                  href={item1Url}
                 >
                   <i class="fas fa-external-link-alt"></i>
                   External
