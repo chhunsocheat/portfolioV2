@@ -24,7 +24,7 @@ class Contact extends React.Component {
           >
             <a
               className="btn-self js-scroll px-4"
-              href="https://drive.google.com/file/d/1G17vHE8thyPN3NAre3ctzJzLVV1fe6F0/view"
+              href="https://drive.google.com/file/d/1D8flQ6Bi99CRJxtF6KQvn1-ez0mctZ1_/view"
               role="button"
             >
               RESUME
